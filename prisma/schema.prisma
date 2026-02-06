@@ -1,0 +1,47 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  description String
+  images      String[]
+  pricePerM2  Int      // Price per square meter in USD
+  location    String
+  minArea     Float    // Minimum area in m²
+  maxArea     Float    // Maximum area in m²
+  status      ProjectStatus @default(PLANNING)
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("projects")
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  message   String?
+  projectId String?
+  createdAt DateTime @default(now())
+
+  @@map("leads")
+}
+
+enum ProjectStatus {
+  PLANNING
+  CONSTRUCTION
+  COMPLETED
+  SOLD_OUT
+}

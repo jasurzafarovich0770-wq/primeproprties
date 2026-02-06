@@ -1,0 +1,47 @@
+{
+  "name": "prime-properties",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix",
+    "security:check": "npm audit && npm outdated",
+    "security:update": "npm update && npm audit fix",
+    "security:test": "node scripts/security-test.js",
+    "test": "npm run lint && npm run security:audit",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "framer-motion": "^10.16.16",
+    "@prisma/client": "^5.7.1",
+    "prisma": "^5.7.1",
+    "react-hook-form": "^7.48.2",
+    "lucide-react": "^0.303.0",
+    "embla-carousel-react": "^8.0.0",
+    "clsx": "^2.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.6.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "@eslint/eslintrc": "^3.2.0"
+  }
+}

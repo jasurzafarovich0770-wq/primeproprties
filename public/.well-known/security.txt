@@ -1,0 +1,10 @@
+Contact: mailto:security@primeproperties.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en, uz, ru
+Canonical: https://primeproperties.com/.well-known/security.txt
+
+# Security Policy
+Policy: https://primeproperties.com/security
+
+# Please report security vulnerabilities responsibly
+# Do not disclose publicly until we have had a chance to address them
