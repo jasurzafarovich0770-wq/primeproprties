@@ -215,9 +215,14 @@ export const translations = {
     // Contact Page
     contactTitle: 'Свяжитесь с нами',
     contactDescription: 'Готовы найти дом своей мечты? Наша опытная команда поможет вам.',
+    contactSubtitle: 'Ищете ли вы свой первый дом или делаете инвестицию, мы здесь, чтобы помочь.',
     visitOffice: 'Посетите наш офис',
+    officeAddress1: '123 Бизнес Район',
+    officeAddress2: 'Ташкент, Узбекистан 100000',
     callUs: 'Позвоните нам',
+    phoneNumber1: '+998 (71) 123-4567',
     emailUs: 'Напишите нам',
+    emailAddress: 'info@primeproperties.uz',
     officeHours: 'Часы работы',
     monday: 'Понедельник - Пятница: 9:00 - 18:00',
     saturday: 'Суббота: 10:00 - 16:00',
@@ -232,6 +237,7 @@ export const translations = {
     reason6: '• Гибкие планы оплаты',
     
     findUs: 'Найдите нас',
+    mapPlaceholder: 'Интерактивная карта будет здесь',
     
     // About
     buildingCommunities: 'Строим Сообщества Завтрашнего Дня',
@@ -344,9 +350,14 @@ export const translations = {
     // Contact Page
     contactTitle: 'Contact Us',
     contactDescription: 'Ready to find your dream home? Our experienced team is here to guide you.',
+    contactSubtitle: 'Whether you\'re looking for your first home or making an investment, we\'re here to help.',
     visitOffice: 'Visit Our Office',
+    officeAddress1: '123 Business District',
+    officeAddress2: 'Tashkent, Uzbekistan 100000',
     callUs: 'Call Us',
+    phoneNumber1: '+998 (71) 123-4567',
     emailUs: 'Email Us',
+    emailAddress: 'info@primeproperties.uz',
     officeHours: 'Office Hours',
     monday: 'Monday - Friday: 9:00 AM - 6:00 PM',
     saturday: 'Saturday: 10:00 AM - 4:00 PM',
@@ -361,6 +372,7 @@ export const translations = {
     reason6: '• Flexible payment plans available',
     
     findUs: 'Find Us',
+    mapPlaceholder: 'Interactive map will be here',
     
     // About
     buildingCommunities: 'Building Tomorrow\'s Communities',
