@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { projects } from '@/lib/mock-data'
+import { mockProjects } from '@/lib/mock-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com'
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
   
   // Dynamic project pages
-  const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
+  const projectPages: MetadataRoute.Sitemap = mockProjects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
